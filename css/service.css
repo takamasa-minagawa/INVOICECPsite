@@ -1,0 +1,451 @@
+/* -------------------- */
+/* -common */
+/* -------------------- */
+main small{
+  font-size: 1.2rem;
+}
+/* -------------------- */
+/* service__title */
+/* -------------------- */
+.service__title{
+  position: relative;
+  background-image: url(../images/top_service.jpg);
+  background-size: cover;
+  background-position: center;
+  object-fit: contain;  
+  height: 400px;
+  width: 100vw;
+  text-align: center;
+}
+.service__title h2{
+  color: #181818;
+  font-size: 6.4rem;
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  -webkit-transform: translateY(-50%) translateX(-50%);
+}
+.service__title h2::before{
+  position: absolute;
+  bottom: 0;
+  margin: auto 0;
+  left: -10px;
+  content: '';
+  width: 115%;
+  height: 5px;
+  background: #181818;
+  transform-origin: left top;
+}
+.service__title h2::after{
+  position: absolute;
+  bottom: 0;
+  margin: auto 0;
+  right: -12%;
+  content: '';
+  width: 20px;
+  height: 20px;
+  background: #181818;
+  border-radius: 50%;
+  transform: translateY(37%);
+}
+/* -------------------- */
+/* service__product */
+/* -------------------- */
+#service__product{
+  max-width: 1200px;
+  
+  text-align: center;
+  margin: 0 auto;
+}
+.service__intro{
+  text-align: center;
+  max-width: 980px;
+  margin: 0 auto;
+}
+.service__intro h2{
+  font-size: 3.6rem;
+}
+.service__intro:last-child{
+  padding-top: 100px;
+}
+.service__wrapper{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 100px;
+  text-align: center;
+}
+.service__product_left{
+  font-size: 3.6rem;
+}
+.btn{
+  font-size: 3.6rem;
+  margin-top: 50px;
+
+}
+.service__product_right{
+  width: 400px;
+  max-width: 400px;
+  height: auto;
+}
+.service__product_right img{
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+.service__product_left .btn{
+  padding: 15px 50px;
+}
+/* -------------------- */
+/* service__merit */
+/* -------------------- */
+#service__merit{
+  padding-top: 0;
+}
+#service__merit h2{
+  font-size: 3.6rem;
+  text-align: center;
+  padding-bottom: 100px;
+}
+#service__merit ul{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+#service__merit li{
+  padding: 50px 0;
+  display: flex;
+}
+#service__merit li:nth-child(odd){
+  background-color: #e6e7f9;
+}
+#service__merit li:nth-child(even){
+  background-color: #fff;
+}
+.service__merit_title{
+  background-color: #080F73;
+  color: #fff;
+  font-size: 2.4rem;
+  padding: 40px;
+  text-align: center;
+  margin-bottom: 30px;
+  display: block;
+}
+
+.service__merit_title h3{
+  color: #fff;
+}
+.service__merit_one h3{
+  max-width: 595px!important;
+}
+.service__merit_left{
+  display: flex;
+  align-items: center;
+  padding-right: 100px;
+  padding-left: 5%;
+}
+.service__merit_right{
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-right: 5%;
+}
+.service__merit_right h3{
+  display: inline-block;
+  max-width: 580px;
+}
+.service__merit_right p, .service__merit_right small{
+  font-weight: 300;
+}
+.service__merit_right h3::before{
+  position: absolute;
+  bottom: -15%;
+  margin: auto 0;
+  left: -5%;
+  content: '';
+  width: 110%;
+  height: 3px;
+  background: #fff;
+  transform-origin: left top;
+}
+.service__merit_right h3::after{
+  position: absolute;
+  bottom: -15%;
+  margin: auto 0;
+  right: -7%;
+  content: '';
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  border-radius: 50%;
+  transform: translateY(37%);
+}
+.service__merit_right {
+  text-align: center;
+}
+.service__merit_right p,.service__merit_right small{
+  text-align: left;
+  display: inline-block;
+}
+.service__merit_right span{
+  color: #FF9345;
+}
+.service__merit_use{
+  background-color: #080F73;
+  color: #fff;
+  padding: 40px;
+  text-align: center;
+  margin-top: 30px;
+}
+.service__merit_use span{
+  font-size: 1.8rem;
+}
+.service__merit_use p:first-child{
+  padding-bottom: 30px;
+  font-weight: 300;
+}
+.service__merit_caution{
+  padding-top: 30px;
+}
+.service__merit_btn{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+.service__merit_btn .btn{
+  padding: 15px 50px;
+}
+/* -------------------- */
+/* service__put */
+/* -------------------- */
+.service__put{
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+.service__put ul{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  gap: 100px;
+  padding-top: 100px;
+}
+.service__put li img{
+  width: 100%;
+  max-width: 300px;
+}
+
+
+
+
+/* -------------------- */
+/* PCsite */
+/* -------------------- */
+@media only screen and (min-width: 1024px){
+  /* -------------------- */
+  /*  common */
+  /* -------------------- */
+  .content{
+    padding: 100px 150px;
+    }
+  /* -------------------- */
+  /*  sevice__merit */
+  /* -------------------- */
+  #service__merit li img{
+    width: 200px;
+    height: 200px;
+  } 
+}
+  
+
+
+
+
+
+
+/* -------------------- */
+/* SPsite */
+/* -------------------- */
+@media only screen and (max-width: 1023px){
+  /* -------------------- */
+  /* service__title SPsite */
+  /* -------------------- */
+  .service__title{
+    height: 150px;
+    background-position-y: 45%;
+  }
+  .service__title h2{
+    font-size: 2.4rem;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);  
+  }
+  .service__title h2::before{
+    position: absolute;
+    bottom: 0;
+    margin: auto 0;
+    left: -5px;
+    content: '';
+    width: 110%;
+    height: 2px;
+    background: #181818;
+    transform-origin: left top;
+  }
+  .service__title h2::after{
+    position: absolute;
+    bottom: 0;
+    margin: auto 0;
+    right: -12%;
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: #181818;
+    border-radius: 50%;
+    transform: translateY(37%);
+  }
+/* -------------------- */
+/* service__product */
+/* -------------------- */
+  .service__wrapper{
+    flex-direction: column-reverse;
+  }
+  .service__wrapper img{
+    width: 250px;
+    padding: 0 50px;
+  }
+  .service__intro{
+    font-weight: 300;
+  }
+  .service__product_left{
+    font-size: 1.8rem;
+    padding: 30px 0 60px;
+  }
+  .service__product_left .btn{
+    font-size: 1.8rem;
+    padding: 10px 20px;
+  }
+  .service__product_right{
+    width: 100vw;
+    max-width: 100vw;
+  }
+  .service__intro:last-child{
+    padding-top: 0;
+  }
+/* -------------------- */
+/* service__merit */
+/* -------------------- */
+  #service__merit{
+    padding: 0;
+  }
+  #service__merit h2{
+    font-size: 1.8rem;
+    padding-bottom: 30px;
+  }
+  #service__merit li{
+    flex-direction: column;
+  }
+  .service__merit_left{
+    padding: 0 0 30px;
+    justify-content: center;
+  }
+  .service__merit_left img{
+    width: 60px;
+    height: auto;
+  }
+  .service__merit_right{
+    padding: 0;
+  }
+  .service__merit_right h3{
+    font-size: 1.8rem;
+  }
+  .service__merit_right h3::after{
+    width: 10px;
+    height: 10px;
+  }
+  .service__merit_use{
+    padding: 40px 0;
+  }
+  .service__merit_use p{
+    font-size: 1.2rem;
+  }
+  #service__merit li:nth-child(odd), #service__merit li:nth-child(even)  {
+    padding: 30px 20px;
+  }
+  .service__merit_btn p{
+    font-size: 1.8rem;
+  }
+/* -------------------- */
+/* service__put */
+/* -------------------- */
+  .service__put ul{
+    display: block;
+    padding-top: 0;
+  }
+  .service__put ul li{
+    padding-top: 30px;
+  }
+  .service__put ul li img{
+    width: 150px;
+  }
+}
+
+
+/* -------------------- */
+/* TABsite */
+/* -------------------- */
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+/* -------------------- */
+/* service__title TABsite */
+/* -------------------- */
+  .service__title h2{
+    font-size: 3.6rem;
+  }
+/* -------------------- */
+/* service__product TABsite */
+/* -------------------- */
+  .service__wrapper img{
+    width: 500px;
+  }
+  .service__product_left, .service__product_left .btn{
+    font-size: 2.4rem;
+  }
+/* -------------------- */
+/* service__merit TABsite */
+/* -------------------- */
+  .service__merit_left img{
+    width: 100px;
+    height: auto;
+  }
+  .service__merit_right h3{
+    font-size: 2.4rem;
+  }
+  .service__merit_use p{
+    font-size: 1.6rem;
+  }
+  .service__merit_use p span{
+    font-size: 1.8rem;
+  }
+/* -------------------- */
+/* service__put TABsite */
+/* -------------------- */
+  .service__put ul li img{
+    width: 250px;
+  }
+}
+
+
+
+
+/* -------------------- */
+/* TABsite ipad pro and sideways */
+/* -------------------- */
+@media only screen and (width: 1024px){
+  .content{
+    padding: 100px 50px;
+  }
+  .service__product_left{
+    font-size: 2.4rem;
+  }
+  .service__product_left .btn p{
+    font-size: 2.4rem;
+  }
+}

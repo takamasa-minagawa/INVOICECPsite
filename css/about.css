@@ -1,0 +1,390 @@
+/* -------------------- */
+/* about__title */
+/* -------------------- */
+.about__title{
+  position: relative;
+  background-image: url(../images/top_about.jpg);
+  background-size: cover;
+  background-position: center;
+  object-fit: contain;  
+  height: 400px;
+  width: 100vw;
+}
+.about__title h2{
+  color: #181818;
+  font-size: 6.4rem;
+  position: absolute;
+  top: 50%; 
+  left: 10%;
+  transform: translateY(-50%) translateX(-10%);
+  -webkit-transform: translateY(-50%) translateX(-10%);
+}
+.about__title h2::before{
+  position: absolute;
+  bottom: 0;
+  margin: auto 0;
+  left: -10px;
+  content: '';
+  width: 115%;
+  height: 5px;
+  background: #181818;
+  transform-origin: left top;
+}
+.about__title h2::after{
+position: absolute;
+bottom: 0;
+margin: auto 0;
+right: -12%;
+content: '';
+width: 20px;
+height: 20px;
+background: #181818;
+border-radius: 50%;
+transform: translateY(37%);
+}
+/* -------------------- */
+/* about__message */
+/* -------------------- */
+#about__message{
+  display: flex;
+  justify-content: space-around;
+}
+#about__message div{
+  padding: 30px;
+  background-color: #E6E7F9;
+}
+#about__message{
+  line-height: 2;
+}
+/* -------------------- */
+/* about__philosophy */
+/* -------------------- */
+#about__philosophy{
+  padding: 100px 0;
+  background-color: #080f73;
+  font-size: 3.6rem;
+  text-align: center;
+  width: 100vw;
+}
+.about__philosophy_title{
+  color: #fff;
+  padding-bottom: 30px;
+}
+.about__philosophy_text{
+  color: #FF9345;
+  display: inline-block;
+}
+.about__philosophy_text::before{
+  position: absolute;
+  top: 65px;
+  bottom: 0;
+  margin: auto 0;
+  left: -1%;
+  content: '';
+  width: 100%;
+  height: 5px;
+  background: #fff;
+  transform-origin: left top;
+}
+.about__philosophy_text::after{
+  position: absolute;
+  top: 65px;
+  bottom: 0;
+  margin: auto 0;
+  right: -1%;
+  content: '';
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border-radius: 50%;
+}
+/* -------------------- */
+/* about__origin */
+/* -------------------- */
+#about__origin{
+  text-align: center;
+}
+#about__origin figure{
+  text-align: center;
+  padding: 50px;
+}
+#about__origin figure img{
+  width: 300px;
+  height: auto;
+}
+#about__origin h2{
+  font-size: 3.6rem;
+  text-align: center;
+}
+#about__origin h3{
+  font-size: 2.4rem;
+  text-align: center;
+  padding-bottom: 50px;
+}
+#about__origin h3:last-of-type{
+  padding-top: 50px;
+}
+#about__origin p{
+  padding: 0 10%;
+  line-height: 1.8;
+  font-weight: 300;
+  display: inline-block;
+  text-align: left;
+  max-width: 837px;
+}
+/* -------------------- */
+/* about__info */
+/* -------------------- */
+#about__info{
+  max-width: 1500px;
+  padding: 100px 50px;
+  margin: 0 auto 100px;
+  display: flex;
+  flex-direction: column;
+}
+.about__info_wrapper{
+    background-color: #E6E7F9;
+    padding: 100px 50px;
+    margin: 0 100px 0;
+}
+#about__info h2{
+  font-size: 3.6rem;
+  padding-bottom: 30px;
+  text-align: center;
+}
+#about__info li{
+  display: flex;
+  margin-bottom:20px;
+  padding: 30px 20px;
+  background-color: #fff;
+  border: 1px solid #cccccc;
+  font-weight: 300;
+}
+#about__info li span{
+  width: 130px;
+}
+#about__info li p{
+  margin: 0 auto;
+}
+.about__info_map{
+  display: flex;
+  justify-content: center;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  margin: 0 10%;
+  position: relative;
+}
+.about__info_map iframe {
+position: absolute;
+left: 0;
+top: 0;
+height: 100%;
+width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------- */
+/* PCsite */
+/* -------------------- */
+@media only screen and (min-width: 1025px){
+/* -------------------- */
+/* -common */
+/* -------------------- */
+  .content{
+    padding: 100px 150px;
+  }
+/* -------------------- */
+/* -about__message */
+/* -------------------- */
+  #about__message{
+    max-width: 1240px;
+    padding: 100px;
+    margin: 0 auto;
+  }
+  #about__message div{
+    margin: auto 0;
+  }  
+}
+
+
+
+
+
+
+
+
+
+
+/* -------------------- */
+/* SPsite */
+/* -------------------- */
+@media only screen and (max-width: 1023px){
+  /* -------------------- */
+  /* about__title SPsite */
+  /* -------------------- */
+  .about__title{
+    height: 150px;
+    background-position-y: 45%;
+  }
+  .about__title h2{
+    font-size: 2.4rem;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);  
+  }
+  .about__title h2::before{
+    position: absolute;
+    bottom: 0;
+    margin: auto 0;
+    left: -5px;
+    content: '';
+    width: 110%;
+    height: 2px;
+    background: #181818;
+    transform-origin: left top;
+  }
+  .about__title h2::after{
+    position: absolute;
+    bottom: 0;
+    margin: auto 0;
+    right: -12%;
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: #181818;
+    border-radius: 50%;
+    transform: translateY(37%);
+  }
+/* -------------------- */
+/* about__message SPsite */
+/* -------------------- */
+  #about__message{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-top: 30px!important;
+  }
+  #about__message img{
+    width: 200px;
+    height: auto;
+  }
+  #about__message div{
+    text-align: center;
+    margin-top: 20px;
+  }
+  .about__message_SP{
+    margin-top: 20px;
+  }
+  #about__philosophy {
+    width: inherit;
+    font-size: 2.4rem;
+    padding: 100px 50px;
+  }
+  .about__philosophy_text{
+    max-width: 375px;
+  }
+  .about__philosophy_text::before{
+    bottom: -60%;
+  }
+  .about__philosophy_text::after{
+    bottom: -60%;
+  }
+  #about__origin h2{
+    font-size: 1.8rem;
+  }
+  #about__origin h3{
+    font-size: 1.6rem;
+  }
+  #about__origin figure img{
+    width: 100px;
+    height: auto;
+  }
+  #about__info{
+    margin: 0;
+    padding: 50px 0;
+  }
+  #about__info h2{
+    font-size: 1.8rem;
+    padding-bottom: 5px;
+  }
+  #about__info ul li{
+    font-size: 1.2rem;
+  }
+  #about__info li span{
+    width: 40%;
+  }
+  #about__info ul li p{
+    padding-left: 20px;
+    width: 60%;
+    margin: 0;
+  }
+  .about__info_wrapper{
+  margin: 0;
+  padding: 30px 30px 50px;
+  }
+  .about__info_map{
+    height: 300px;
+    padding-bottom: 0;
+    margin: 0 10%;
+  }
+}
+
+
+
+
+
+/* -------------------- */
+/* TABsite */
+/* -------------------- */
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+  /* -------------------- */
+  /* about__title intro TABsite */
+  /* -------------------- */
+    .about__title h2{
+      font-size: 3.6rem;
+    }
+    #about__philosophy h2{
+      font-size: 3.6rem;
+      max-width: inherit;
+    }
+    #about__origin figure img{
+      width:  200px;
+      height: auto;
+    }
+    #about__info h2{
+      padding-bottom: 20px;
+    }
+  }
+
+
+
+/* -------------------- */
+/* TABsite ipad pro and sideways */
+/* -------------------- */
+@media only screen and (width: 1024px){
+  #about__message{
+    padding: 100px 50px;
+  }
+  #about__message figure img{
+    width: 300px;
+    height: 300px;
+  }
+  #about__info{
+    padding: 100px 50px;
+  }
+  #about__message div{
+    margin: auto 0;
+  }  
+}

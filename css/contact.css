@@ -1,0 +1,349 @@
+/* -------------------- */
+/* common */
+/* -------------------- */
+textarea {
+  resize: none;
+}
+  .hidden{
+    display: none;
+    visibility: hidden;
+}
+/* -------------------- */
+/* contact__title intro */
+/* -------------------- */
+.contact__title{
+  position: relative;
+  background-image: url(../images/top_contact.jpg);
+  background-size: cover;
+  background-position: center;
+  object-fit: contain;  
+  height: 400px;
+  width: 100vw;
+}
+.contact__title h2{
+  color: #181818;
+  font-size: 6.4rem;
+  position: absolute;
+  top: 50%; 
+  right: 10%;
+  transform: translateY(-50%) translateX(10%);
+  -webkit-transform: translateY(-50%) translateX(10%);
+}
+.contact__title h2::before{
+  position: absolute;
+  bottom: 0;
+  margin: auto 0;
+  left: -10px;
+  content: '';
+  width: 115%;
+  height: 5px;
+  background: #181818;
+  transform-origin: left top;
+}
+.contact__title h2::after{
+  position: absolute;
+  bottom: 0;
+  margin: auto 0;
+  right: -12%;
+  content: '';
+  width: 20px;
+  height: 20px;
+  background: #181818;
+  border-radius: 50%;
+  transform: translateY(37%);
+}
+.contact__intro{
+  text-align: center;
+  font-weight: 300;
+}
+.bs-callout-warning{
+  padding-top: 50px;
+  color: #ff0000;
+}
+
+/* -------------------- */
+/* contact__form common */
+/* -------------------- */
+.contact__answer input, .contact__answer textarea, .contact__policy{
+  font-weight: 300;
+}
+.contact__answer_type input{
+  cursor:pointer;
+}
+.contact__policy input[type="submit"]
+{
+  cursor: pointer;
+}
+/* -------------------- */
+/*  PCsite */
+/* -------------------- */
+@media only screen and (min-width: 1025px){
+  .content{
+    padding: 100px 150px;
+  }
+}
+/* -------------------- */
+/*  PC and ipad sideways common */
+/* -------------------- */
+@media only screen and (min-width: 1024px){
+/* -------------------- */
+/* contact__form */
+/* -------------------- */
+  .contact__form{
+    padding-top: 0;
+  }
+  .contact__form ul li{
+    display: flex;
+  }
+  .contact__question{
+    background-color: #080f73;
+    color: #fff;
+    display: inline-block;
+    padding: 20px 10px;
+    width: 30%;
+    border: solid #fff;
+    border-width: 1px 0 1px 1px;
+    max-width: 400px;
+    margin-left: auto;
+  }
+  .contact__question p{
+    background-color: #FF9345;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .contact__answer{
+    background-color: #E6E7F9;
+    width: 70%;
+    border: solid #181818;
+    border-width: 1px 1px 1px 0;
+    padding: 20px 10px;
+    max-width: 800px;
+    margin-right:auto;
+  }
+  .contact__answer input,textarea{
+    width: 100%;
+  }
+  .contact__answer textarea{
+    height: 300px;
+    overflow-y: auto;
+  }
+  .contact__answer_type{
+    background-color: #E6E7F9;
+    width: 70%;
+    border-top: 1px solid #181818;
+    border-bottom: 1px solid #181818;
+    border-right: 1px solid #181818;
+    padding: 20px 10px;
+    max-width: 800px;
+    margin-right:auto;
+  }
+  .contact__answer_type div{
+    display: flex;
+    flex-direction: column;
+  }
+  .contact__answer_type div input[type="radio"]{
+    position: relative;
+    top: -4px;
+  }
+  .contact__mail_question{
+  display: block;
+  }
+  .contact__mail_answer{
+    display: block;
+    padding-top:23px;
+  }
+  .error__name_check ul li{
+  display: flex;
+  justify-content: center;
+  }
+  .parsley-custom-error-message, .parsley-required, .parsley-equalto{
+    color: #ff0000;
+  }
+/* -------------------- */
+/* contact__policy */
+/* -------------------- */
+  .contact__policy{
+    text-align: center;
+    padding: 50px 0 0;
+  }
+  .contact__policy_text{
+    height: 300px;
+    width: 70%;
+    max-width: 900px;
+    min-width: 500px;
+    margin: 50px auto;
+    border: 1px solid #181818;
+    text-align: left;
+    overflow-y: scroll;
+  }
+  .contact__policy .btn{
+    margin-top: 50px;
+    color: #fff;
+    box-shadow: none;
+    border: none;
+  }
+/* -------------------- */
+/* contact__submit */
+/* -------------------- */
+  .contact__submit{
+    text-align: center;
+    margin: 150px 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------- */
+/* SPsite */
+/* -------------------- */
+@media only screen and (max-width: 1023px){
+/* -------------------- */
+/* contact__title intro SPsite */
+/* -------------------- */
+  .contact__title{
+    height: 150px;
+    background-position-y: 60%;
+  }
+  .contact__title h2{
+    font-size: 2.4rem;
+    top: 50%;
+    right: 50%;
+    margin: auto;
+    transform: translateY(-50%) translateX(50%);
+    -webkit-transform: translateY(-50%) translateX(50%);
+  }
+  .contact__title h2::before{
+    position: absolute;
+    bottom: 0;
+    margin: auto 0;
+    left: -5px;
+    content: '';
+    width: 110%;
+    height: 2px;
+    background: #181818;
+    transform-origin: left top;
+  }
+  .contact__title h2::after{
+  position: absolute;
+  bottom: 0;
+  margin: auto 0;
+  right: -12%;
+  content: '';
+  width: 10px;
+  height: 10px;
+  background: #181818;
+  border-radius: 50%;
+  transform: translateY(37%);
+  }
+/* -------------------- */
+/* contact__form SPsite */
+/* -------------------- */
+  .contact__form{
+    background-color: #E6E7F9;
+  }
+  .contact__form form{
+    margin: 0 auto;
+  }
+  .contact__question p{
+    background-color: #FF9345;
+    color: #fff;
+    display: inline-block;
+    margin-right: 10px;
+    padding: 2px;
+  }
+  .contact__answer_type{
+    width: 70%;
+    padding: 20px 10px;
+    max-width: 800px;
+    margin-right:auto;
+  }
+  .contact__answer_type div{
+    display: flex;
+    flex-direction: column;
+  }
+  .contact__answer{
+    background-color: #E6E7F9;
+    width: 100%;
+    padding: 20px 0;
+    max-width: 800px;
+  }
+  .contact__answer input,textarea{
+    width: 96%;
+    border: 1px solid #181818;
+    padding-left: 10px;
+  }
+  .contact__answer textarea{
+    height: 200px;
+  }
+  .contact__answer_type div input[type="radio"]{
+    position: relative;
+    top: -4px;
+  }
+
+  .bs-callout-warning,.parsley-custom-error-message, .parsley-required, .parsley-equalto{
+    color: #ff0000;
+  }
+  .contact__mail_question{
+    display: block;
+  }
+  .contact__mail_answer{
+    display: block;
+    padding-top: 10px;
+  }
+/* -------------------- */
+/* contact__policy */
+/* -------------------- */
+  .contact__policy{
+    text-align: center;
+    padding: 50px 0 0!important;
+  }
+  .contact__policy_text{
+    height: 300px;
+    width: 100%;
+    max-width: 900px;
+    margin: 50px auto 20px;
+    border: 1px solid #181818;
+    background-color: #fff;
+    text-align: left;
+    overflow-y: scroll;
+  }
+  .contact__policy .btn{
+    margin-top: 50px;
+    color: #fff;
+    box-shadow: none;
+    border: none;
+    padding: 5px 50px;
+  }
+/* -------------------- */
+/* contact__submit */
+/* -------------------- */
+  .contact__submit{
+    text-align: center;
+    padding: 100px 15px;
+  }
+}
+/* -------------------- */
+/* TABsite */
+/* -------------------- */
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+/* -------------------- */
+/* contact__title intro TABsite */
+/* -------------------- */
+  .contact__title h2{
+    font-size: 3.6rem;
+  }
+  .contact__submit{
+    padding: 200px 15px;
+  }
+}
