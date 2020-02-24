@@ -98,10 +98,6 @@ header li a{
   position: relative;
   transition: .3s;
 }
-.header__item a:hover{
-  color: #bbbbbb;
-  transition: .3s;
-}
 .header__item a::after{
   position: absolute;
   bottom: -4px;
