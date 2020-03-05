@@ -4,12 +4,14 @@
 html {
   font-size: 62.5%;
   font-family:'Roboto','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3', Meiryo, sans-serif;
+  overflow: auto;
 }
 body {
   font-size: 1.6rem;
   line-height: 1.5;
   letter-spacing: 0.05em;
   color: #333333;
+  overflow: hidden;
 }
 h1,h2,h3{
   position: relative;
